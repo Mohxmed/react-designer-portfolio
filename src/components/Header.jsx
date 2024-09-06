@@ -1,3 +1,4 @@
+import { useCallback, useState } from "react";
 import Container from "../layouts/Container";
 import "../styles/header.css";
 import { NavLink } from "react-router-dom";
@@ -22,21 +23,53 @@ const Logo = ({ name }) => {
 };
 
 const NavList = () => {
+  // Active Links
   const ifActiveClass = ({ isActive }) => (isActive ? "active" : null);
+  // NavigatorLine
+  const [navigatorLine, setNavigatorLine] = useState(0); // Home
+  const handleNavigatorLine = useCallback((target) => {
+    if (navigatorLine === target) return;
+    if (navigatorLine !== target) setNavigatorLine(target);
+  });
 
   return (
     <div className="nav-list">
       <ul>
-        <NavLink className={ifActiveClass} to="/">
+        <span className="navigator-line" style={{ left: navigatorLine }}></span>
+        <NavLink
+          onClick={() => {
+            handleNavigatorLine(0);
+          }}
+          className={ifActiveClass}
+          to="/"
+        >
           Home
         </NavLink>
-        <NavLink className={ifActiveClass} to="about">
+        <NavLink
+          onClick={() => {
+            handleNavigatorLine(100);
+          }}
+          className={ifActiveClass}
+          to="about"
+        >
           About
         </NavLink>
-        <NavLink className={ifActiveClass} to="projects">
+        <NavLink
+          onClick={() => {
+            handleNavigatorLine(200);
+          }}
+          className={ifActiveClass}
+          to="projects"
+        >
           Projects
         </NavLink>
-        <NavLink className={ifActiveClass} to="contact">
+        <NavLink
+          onClick={() => {
+            handleNavigatorLine(300);
+          }}
+          className={ifActiveClass}
+          to="contact"
+        >
           Contact
         </NavLink>
       </ul>
