@@ -16,24 +16,46 @@ const Logo = ({ name }) => {
 const NavList = () => {
   // Navigator Line
   const [navigatorLine, setNavigatorLine] = useState(0); // Home
+
   const handleNavLine = useCallback((target) => {
     if (navigatorLine === target) return;
     if (navigatorLine !== target) setNavigatorLine(target);
   });
+
   return (
     <div className="nav-list">
       <ul>
         <NavLine leftPosition={navigatorLine} />
-        <CustomLink to={"/"} onClick={handleNavLine} NavTarget={0}>
+        <CustomLink
+          to={"/"}
+          onClick={handleNavLine}
+          NavTarget={0}
+          setNavLine={setNavigatorLine}
+        >
           Home
         </CustomLink>
-        <CustomLink to={"about"} onClick={handleNavLine} NavTarget={100}>
+        <CustomLink
+          to={"about"}
+          onClick={handleNavLine}
+          NavTarget={100}
+          setNavLine={setNavigatorLine}
+        >
           About
         </CustomLink>
-        <CustomLink to={"projects"} onClick={handleNavLine} NavTarget={200}>
+        <CustomLink
+          to={"projects"}
+          onClick={handleNavLine}
+          NavTarget={200}
+          setNavLine={setNavigatorLine}
+        >
           Projects
         </CustomLink>
-        <CustomLink to={"contact"} onClick={handleNavLine} NavTarget={300}>
+        <CustomLink
+          to={"contact"}
+          onClick={handleNavLine}
+          NavTarget={300}
+          setNavLine={setNavigatorLine}
+        >
           Contact
         </CustomLink>
       </ul>
@@ -49,8 +71,11 @@ const NavLine = ({ leftPosition }) => {
 };
 
 // Custom NavLink
-const CustomLink = ({ to, NavTarget, onClick, children }) => {
-  const ifActiveClass = ({ isActive }) => (isActive ? "active" : null);
+const CustomLink = ({ to, NavTarget, onClick, children, setNavLine }) => {
+  const ifActiveClass = ({ isActive }) => {
+    isActive && setNavLine(NavTarget);
+    return isActive ? "active" : null;
+  };
   return (
     <NavLink
       onClick={() => {
