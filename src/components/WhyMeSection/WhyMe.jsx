@@ -1,8 +1,7 @@
-import { TiThLarge } from "react-icons/ti";
 import Container from "../../layouts/Container";
 import "./why-me.css";
-import "../../styles/pros-card.css";
 
+// Imgs
 import Pros from "../../assets/Rectangle.png";
 import Pros1 from "../../assets/Rectangle-1.png";
 import Pros2 from "../../assets/Rectangle-2.png";
