@@ -118,6 +118,7 @@
   }
 }
 
+/* Checkpoints */
 @media (max-width: 768px) {
   .hero-section .container {
     flex-direction: column;
