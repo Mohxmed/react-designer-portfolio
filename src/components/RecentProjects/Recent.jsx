@@ -15,8 +15,8 @@ export const Recent = () => {
           </button>
         </div>
         <div className="projects-wrapper">
-          <Project img={img} title={"Gaming Website"} />
-          <Project img={img2} title={"NFTs Store"} />
+          <Project delay={0} img={img} title={"Gaming Website"} />
+          <Project delay={200} img={img2} title={"NFTs Store"} />
         </div>
       </Container>
     </div>

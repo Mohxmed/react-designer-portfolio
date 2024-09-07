@@ -1,9 +1,9 @@
 import { BsEye, BsLayersFill } from "react-icons/bs";
 import { CgArrowTopRight } from "react-icons/cg";
 
-const Project = ({ img, title }) => {
+const Project = ({ img, title, delay }) => {
   return (
-    <div className="project" data-aos="flip-right">
+    <div className="project" data-aos="fade-left" data-aos-delay={`${delay}`}>
       <div className="img-overlay">
         <span className="img-icon">
           <CgArrowTopRight />
