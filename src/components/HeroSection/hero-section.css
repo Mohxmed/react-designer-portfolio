@@ -48,36 +48,26 @@
   gap: 20px;
   align-items: center;
 }
-.follow .icons {
+.hero-content .follow .icons {
   display: flex;
   gap: 10px;
   color: var(--light-icons-color);
-}
-.gray {
-  color: var(--light-icons-color);
-}
-.hero-btns {
-  display: flex;
-  gap: 1rem;
-}
-.icons a:hover {
-  color: #222222;
-  margin: -3px 0px;
 }
 .icons a {
   cursor: pointer;
   transition: margin 0.1s;
   color: #4b4b4b;
 }
-@keyframes image {
-  0% {
-    top: 15px;
-  }
-  100% {
-    top: 0;
-  }
+.hero-content .follow .icons a:hover {
+  color: #222222;
+  margin: -3px 0px;
+}
+.hero-btns {
+  display: flex;
+  gap: 1rem;
 }
 
+/* Email Me Overlay */
 .overlay-content form {
   display: flex;
   flex-direction: column;
@@ -118,4 +108,13 @@
 }
 .form-buttons .send {
   flex-grow: 1;
+}
+/* keyframes */
+@keyframes image {
+  0% {
+    top: 15px;
+  }
+  100% {
+    top: 0;
+  }
 }

@@ -1,13 +1,17 @@
+import { useState } from "react";
+
+// Components
+import Overlay from "../../layouts/Overlay";
 import { OutlineButton, MainButton } from "../Buttons";
+
 // images
 import HeroImage from "../../assets/Image.png";
 import LineImage from "../../assets/Line.png";
+
 // icons
 import { BsDribbble, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { GoDownload } from "react-icons/go";
-import { useState } from "react";
-import Overlay from "../../layouts/Overlay";
 import { FaX } from "react-icons/fa6";
 import { TbTrash } from "react-icons/tb";
 
@@ -53,6 +57,7 @@ const HeroInfo = () => {
   );
 };
 
+// HeroInfoText Component
 const HeroInfoText = () => {
   return (
     <div className="info">
@@ -70,6 +75,7 @@ const HeroInfoText = () => {
   );
 };
 
+// HeroSocials Component
 const HeroSocials = () => {
   return (
     <div className="follow">
@@ -92,6 +98,7 @@ const HeroSocials = () => {
   );
 };
 
+// MailForm Component w/ Overlay
 const MailForm = ({ exit }) => {
   return (
     <Overlay>
