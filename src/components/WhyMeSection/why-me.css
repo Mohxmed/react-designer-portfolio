@@ -1,0 +1,29 @@
+.why-me h1 {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.pros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  text-align: center;
+}
+.card {
+  width: 240px;
+  flex-grow: 1;
+}
+.card p {
+  color: #828282;
+  width: 220px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 300;
+}
+.card h4 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-block: 15px;
+}
