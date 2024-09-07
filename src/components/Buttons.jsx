@@ -1,8 +1,8 @@
 import "../styles/buttons.css";
 // Main Buttons
-const MainButton = ({ text, icon }) => {
+const MainButton = ({ onClick, text, icon }) => {
   return (
-    <button className="btn main-btn">
+    <button onClick={onClick} className="btn main-btn">
       <span>
         {icon}
         {text}
@@ -10,9 +10,9 @@ const MainButton = ({ text, icon }) => {
     </button>
   );
 };
-const OutlineButton = ({ text, icon }) => {
+const OutlineButton = ({ onClick, text, icon }) => {
   return (
-    <button className="btn outline-btn">
+    <button onClick={onClick} className="btn outline-btn">
       <span>
         {icon}
         {text}

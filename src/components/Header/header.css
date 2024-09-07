@@ -9,17 +9,16 @@
 .header .logo h2 {
   position: relative;
   color: var(--dark-text-color);
-  animation: logoPop 0.5s cubic-bezier(0.39, 0.15, 0, 0.99) infinite alternate;
 }
 .header .logo h2:after {
   content: "";
   position: absolute;
-  width: 100%;
   height: 3px;
-  bottom: 1px;
   left: 0;
+  bottom: 1px;
   z-index: -1;
   background: linear-gradient(45deg, #eebf63, transparent);
+  animation: logoLine 1s linear infinite alternate;
 }
 .header .nav-list ul {
   position: relative;
@@ -48,11 +47,11 @@
   transition: all 0.2s linear;
 }
 /* Animation */
-@keyframes logoPop {
+@keyframes logoLine {
   0% {
-    scale: 0.9;
+    width: 10%;
   }
   100% {
-    scale: 1;
+    width: 100%;
   }
 }
