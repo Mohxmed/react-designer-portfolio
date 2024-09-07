@@ -6,14 +6,18 @@ import Image from "../../assets/card-image.png";
 // Icons
 import { GoStarFill } from "react-icons/go";
 
-const CardContent = () => {
+const CardContent = ({ targetX, targetY, mouseMove }) => {
   return (
-    <div className="card-content">
+    <div
+      className="card-content"
+      onMouseMove={mouseMove}
+      style={{ transform: `translate(${targetX}px, ${targetY}px)` }}
+    >
       <div className="card-pic">
-        <img src={Image} />
+        <img src={Image} data-aos="flip-left" />
       </div>
       <div className="card-details">
-        <div className="card-analysis">
+        <div className="card-analysis" data-aos="zoom-in">
           <div className="part-analysis">
             <h3>
               <IncrementEffect target={120} time={10} />
@@ -40,7 +44,7 @@ const CardContent = () => {
             <span>Positive Review’s</span>
           </div>
         </div>
-        <div className="card-brief">
+        <div className="card-brief" data-aos="zoom-out">
           <h2>Glad To Help You!</h2>
           <p>
             As a full-service digital designer, I work closely with my clients

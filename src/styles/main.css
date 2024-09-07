@@ -10,9 +10,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  transition: all 0.4s;
 }
-
+div#root {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
 .container {
   max-width: 1400px;
   width: 90%;
