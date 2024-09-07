@@ -6,13 +6,9 @@ import Image from "../../assets/card-image.png";
 // Icons
 import { GoStarFill } from "react-icons/go";
 
-const CardContent = ({ targetX, targetY, mouseMove }) => {
+const CardContent = () => {
   return (
-    <div
-      className="card-content"
-      onMouseMove={mouseMove}
-      style={{ transform: `translate(${targetX}px, ${targetY}px)` }}
-    >
+    <div className="card-content">
       <div className="card-pic">
         <img src={Image} data-aos="flip-left" />
       </div>
