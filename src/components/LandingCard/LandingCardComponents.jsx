@@ -43,12 +43,9 @@ const CardContent = () => {
         <div className="card-brief">
           <h2>Glad To Help You!</h2>
           <p>
-            As a full-service digital designer, I work closely
-            <br />
-            with my clients to define, design and develop
-            <br />
-            transformative user experiences across all <br />
-            platforms and brand’s touchpoints.
+            As a full-service digital designer, I work closely with my clients
+            to define, design and develop transformative user experiences across
+            all platforms and brand’s touchpoints.
           </p>
         </div>
       </div>

@@ -63,13 +63,12 @@ const HeroInfoText = () => {
     <div className="info">
       <span className="greeting">Hey!</span>
       <h1 className="hero-title">
-        I'm <span className="main-color">Ariene Ray</span>. <br /> an UI/UX
-        Designer.
+        I'm <span className="main-color">Ariene Ray</span>. an UI/UX Designer.
       </h1>
       <img className="fx2" src={LineImage} />
       <p>
-        UX Designer based in Jakarta, Indonesia.
-        <br />I am designing with a minimal and beautiful design <br /> in mind.
+        UX Designer based in Jakarta, Indonesia. I am designing with a minimal
+        and beautiful design in mind.
       </p>
     </div>
   );
