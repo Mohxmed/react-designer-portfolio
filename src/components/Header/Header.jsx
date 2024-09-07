@@ -4,7 +4,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" data-aos="fade-down">
       <Container>
         <Logo name={"Arlene Rey"} />
         <NavList />
