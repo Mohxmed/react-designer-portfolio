@@ -7,7 +7,7 @@ import "./landing-card.css";
 
 const LandingCard = () => {
   return (
-    <div className="landing-card">
+    <div className="landing-card" data-aos="fade-right">
       <Container>
         <CardContent />
       </Container>

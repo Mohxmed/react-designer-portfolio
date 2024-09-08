@@ -5,7 +5,7 @@ import Overlay from "../../layouts/Overlay";
 import { OutlineButton, MainButton } from "../Buttons";
 
 // images
-import HeroImage from "../../assets/Image.png";
+import HeroImage from "../../assets/redesign.svg";
 import LineImage from "../../assets/Line.png";
 
 // icons
@@ -18,7 +18,7 @@ import { TbTrash } from "react-icons/tb";
 // Img Component
 const HeroImg = () => {
   return (
-    <div className="hero-img">
+    <div className="hero-img" data-aos="fade-left">
       <div className="img-wrapper">
         <img className="landing" src={HeroImage}></img>
       </div>
@@ -31,7 +31,7 @@ const HeroInfo = () => {
   const [showMailForm, setShowMailForm] = useState(false);
 
   return (
-    <div className="hero-content">
+    <div className="hero-content" data-aos="fade-right">
       {showMailForm ? (
         <MailForm
           exit={() => {

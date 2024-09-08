@@ -1,10 +1,32 @@
 .landing-contact .content {
-  background: var(--primary-color);
+  background: #fe9d46;
   padding: 20px 10px;
   border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(/src/assets/dddepth-348.jpg);
+  background-size: cover;
+}
+.landing-contact .content h1 {
+  color: #111111;
+  text-align: left;
+  font-weight: 500;
+}
+.contact-btns {
+  display: flex;
+  gap: 25px;
 }
 
-.landing-contact .content h1 {
+.mail-btn {
+  font-weight: 600;
+  color: #000;
+  background: #fff;
+}
+.seemore-btn {
+  font-weight: 600;
+  padding-inline: 20px;
   color: #fff;
-  text-align: center;
+  background: transparent;
+  border: 2px solid #fff;
 }

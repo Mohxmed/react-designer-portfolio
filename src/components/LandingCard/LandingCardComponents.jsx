@@ -13,7 +13,11 @@ const CardContent = () => {
         <img src={Image} data-aos="flip-left" />
       </div>
       <div className="card-details">
-        <div className="card-analysis" data-aos="zoom-in">
+        <div
+          className="card-analysis"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
           <div className="part-analysis">
             <h3>
               <IncrementEffect target={120} time={10} />
@@ -40,7 +44,7 @@ const CardContent = () => {
             <span>Positive Review’s</span>
           </div>
         </div>
-        <div className="card-brief" data-aos="zoom-out">
+        <div className="card-brief" data-aos="fade-left" data-aos-delay="300">
           <h2>Glad To Help You!</h2>
           <p>
             As a full-service digital designer, I work closely with my clients

@@ -1,0 +1,9 @@
+.partners .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners img {
+  width: 95%;
+}

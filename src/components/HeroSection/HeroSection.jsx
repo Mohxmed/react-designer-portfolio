@@ -5,7 +5,7 @@ import { HeroInfo, HeroImg } from "./HeroSectionComponent";
 const HeroSection = () => {
   return (
     <>
-      <div className="hero-section" data-aos="fade-right">
+      <div className="hero-section">
         <Container>
           <HeroInfo />
           <HeroImg />

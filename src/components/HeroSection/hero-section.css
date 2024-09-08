@@ -3,7 +3,6 @@
   margin-top: 2rem;
 }
 .hero-content {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -29,7 +28,13 @@
   max-width: 450px;
   color: var(--dark-text-color);
 }
+.hero-section .img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 .hero-img {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,10 +43,8 @@
 }
 .hero-img .landing {
   width: 100%;
-  border: 1px solid #d4d4d46b;
-  border-radius: 50%;
   position: relative;
-  animation: image 1s cubic-bezier(0.25, 0.1, 0.25, 1) infinite alternate;
+  max-width: 600px;
 }
 .hero-content .follow {
   display: flex;
