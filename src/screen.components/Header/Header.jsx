@@ -1,5 +1,6 @@
 import Container from "../../layouts/Container";
 import { Logo, NavList } from "./HeaderComponents";
+
 import "./header.css";
 
 const Header = () => {

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 // Images
-import Image from "../../assets/card-image.png";
+import Image from "../../assets/landing-card/card-image.png";
 
 // Icons
 import { GoStarFill } from "react-icons/go";

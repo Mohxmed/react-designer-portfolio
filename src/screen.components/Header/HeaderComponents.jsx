@@ -3,9 +3,10 @@ import { NavLink, Link } from "react-router-dom";
 
 // Logo
 const Logo = ({ name }) => {
+  const textStyle = { textDecoration: "none", color: "inherit" };
   return (
     <div className="logo">
-      <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
+      <Link style={textStyle} to="/">
         <h2>{name}</h2>
       </Link>
     </div>
@@ -14,7 +15,6 @@ const Logo = ({ name }) => {
 
 // Navigate Links
 const NavList = () => {
-  // Navigator Line
   const [navigatorLine, setNavigatorLine] = useState(0); // Home
 
   const handleNavLine = useCallback((target) => {
@@ -37,7 +37,7 @@ const NavList = () => {
         <CustomLink
           to={"about"}
           onClick={handleNavLine}
-          NavTarget={100}
+          NavTarget={90}
           setNavLine={setNavigatorLine}
         >
           About
@@ -45,7 +45,7 @@ const NavList = () => {
         <CustomLink
           to={"projects"}
           onClick={handleNavLine}
-          NavTarget={200}
+          NavTarget={180}
           setNavLine={setNavigatorLine}
         >
           Projects
@@ -53,7 +53,7 @@ const NavList = () => {
         <CustomLink
           to={"contact"}
           onClick={handleNavLine}
-          NavTarget={300}
+          NavTarget={270}
           setNavLine={setNavigatorLine}
         >
           Contact

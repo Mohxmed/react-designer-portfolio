@@ -6,7 +6,7 @@ import Logos from "../../assets/logos/Logos.png";
 
 export const Partner = () => {
   return (
-    <div className="partners" data-aos="fade-down">
+    <div className="partners main-gap" data-aos="fade-down">
       <Container>
         <img src={Logos} />
       </Container>

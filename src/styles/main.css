@@ -7,14 +7,15 @@
   --light-icons-color: #858585;
   --primary-color: #eebf63;
 }
-
+.main-gap {
+  margin-top: 10rem;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
 div#root {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
 }
 .container {
   max-width: 1400px;

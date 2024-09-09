@@ -4,12 +4,21 @@ import "./comments.css";
 import user from "../../assets/users/Picture.png";
 const Comment = () => {
   return (
-    <div className="comments">
+    <div className="comments main-gap ">
       <Container>
-        <h1>We Are Loved By Users And Clients Worldwide</h1>
+        <h1 data-aos="fade-down">
+          We Are Loved By Users And Clients Worldwide
+        </h1>
         <div className="comment-wrapper">
           <CommentCard aos={"fade-right"} />
           <CommentCard aos={"fade-left"} />
+        </div>
+
+        <div className="circular-taps">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </Container>
     </div>

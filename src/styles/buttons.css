@@ -45,3 +45,9 @@
 .outline-btn:focus::before {
   left: 0;
 }
+
+@media (max-width: 560px) {
+  .outline-btn {
+    width: 170px;
+  }
+}

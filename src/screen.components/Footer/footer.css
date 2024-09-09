@@ -1,0 +1,9 @@
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer h1 {
+  font-weight: 500;
+  color: #6fc2c5;
+}

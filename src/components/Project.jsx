@@ -5,9 +5,6 @@ const Project = ({ img, title, delay }) => {
   return (
     <div className="project" data-aos="fade-left" data-aos-delay={`${delay}`}>
       <div className="img-overlay">
-        <span className="img-icon">
-          <CgArrowTopRight />
-        </span>
         <img src={img} alt="#" />
       </div>
       <div className="project-info">

@@ -1,0 +1,14 @@
+.icons {
+  display: flex;
+  gap: 10px;
+  color: var(--light-icons-color);
+}
+.icons a {
+  cursor: pointer;
+  transition: margin 0.1s;
+  color: #4b4b4b;
+}
+.icons a:hover {
+  color: #222222;
+  margin: -3px 0px;
+}

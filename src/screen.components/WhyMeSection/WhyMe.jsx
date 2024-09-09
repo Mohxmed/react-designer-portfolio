@@ -2,14 +2,15 @@ import Container from "../../layouts/Container";
 import "./why-me.css";
 
 // Imgs
-import Pros from "../../assets/Rectangle.png";
-import Pros1 from "../../assets/Rectangle-1.png";
-import Pros2 from "../../assets/Rectangle-2.png";
-import Pros3 from "../../assets/Rectangle-3.png";
+
+import Pros from "../../assets/why-me/Rectangle.png";
+import Pros1 from "../../assets/why-me/Rectangle-1.png";
+import Pros2 from "../../assets/why-me/Rectangle-2.png";
+import Pros3 from "../../assets/why-me/Rectangle-3.png";
 
 const WhyMe = () => {
   return (
-    <div className="why-me">
+    <div className="why-me main-gap ">
       <Container>
         <h1 data-aos="fade-down">Why Hire Me?</h1>
         <div className="pros">

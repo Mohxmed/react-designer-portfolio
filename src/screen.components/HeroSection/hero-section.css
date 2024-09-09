@@ -1,6 +1,6 @@
 .hero-section .container {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .hero-content {
   display: flex;
@@ -51,20 +51,6 @@
   gap: 20px;
   align-items: center;
 }
-.hero-content .follow .icons {
-  display: flex;
-  gap: 10px;
-  color: var(--light-icons-color);
-}
-.icons a {
-  cursor: pointer;
-  transition: margin 0.1s;
-  color: #4b4b4b;
-}
-.hero-content .follow .icons a:hover {
-  color: #222222;
-  margin: -3px 0px;
-}
 .hero-btns {
   display: flex;
   gap: 1rem;
@@ -111,15 +97,6 @@
 .form-buttons .send {
   flex-grow: 1;
 }
-/* keyframes */
-@keyframes image {
-  0% {
-    top: 15px;
-  }
-  100% {
-    top: 0;
-  }
-}
 
 /* Checkpoints */
 @media (max-width: 768px) {
@@ -140,5 +117,8 @@
   .hero-img {
     width: 50%;
     margin: auto;
+  }
+  .hero-btns {
+    gap: 0.5rem;
   }
 }

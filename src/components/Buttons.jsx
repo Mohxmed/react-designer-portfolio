@@ -10,6 +10,7 @@ const MainButton = ({ onClick, text, icon }) => {
     </button>
   );
 };
+
 const OutlineButton = ({ onClick, text, icon }) => {
   return (
     <button onClick={onClick} className="btn outline-btn">

@@ -2,14 +2,14 @@ import { useState } from "react";
 
 // Components
 import Overlay from "../../layouts/Overlay";
-import { OutlineButton, MainButton } from "../Buttons";
+import { OutlineButton, MainButton } from "../../components/Buttons";
+import { Socials } from "../../components/Socials";
 
 // images
-import HeroImage from "../../assets/redesign.svg";
-import LineImage from "../../assets/Line.png";
+import HeroImage from "../../assets/hero-section/redesign.svg";
+import LineImage from "../../assets/hero-section/Line.png";
 
 // icons
-import { BsDribbble, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { GoDownload } from "react-icons/go";
 import { FaX } from "react-icons/fa6";
@@ -40,7 +40,7 @@ const HeroInfo = () => {
         />
       ) : null}
       <HeroInfoText />
-      <HeroSocials />
+      <Socials />
       <div className="hero-btns">
         <MainButton
           onClick={() => {
@@ -71,29 +71,6 @@ const HeroInfoText = () => {
         UX Designer based in Jakarta, Indonesia. I am designing with a minimal
         and beautiful design in mind.
       </p>
-    </div>
-  );
-};
-
-// HeroSocials Component
-const HeroSocials = () => {
-  return (
-    <div className="follow">
-      <span className="gray">Follow Me</span>
-      <div className="icons ">
-        <a href="#">
-          <BsLinkedin href="#" size={25} />
-        </a>
-        <a href="#">
-          <BsDribbble href="#" size={25} />
-        </a>
-        <a href="#">
-          <BsInstagram href="#" size={25} />
-        </a>
-        <a href="#">
-          <BsYoutube href="#" size={25} />
-        </a>
-      </div>
     </div>
   );
 };

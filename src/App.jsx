@@ -8,7 +8,7 @@ export default function App() {
   // AOS
   useEffect(() => {
     Aos.init({
-      duration: 700,
+      duration: 1000,
       once: true,
     });
   }, []);
@@ -18,9 +18,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<RouteLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="about" element={<h1>About page goes here</h1>} />
-          <Route path="projects" element={<h1>Projects page goes here</h1>} />
-          <Route path="contact" element={<h1>Contact page goes here</h1>} />
+          <Route path="about" element={<HomePage />} />
+          <Route path="projects" element={<HomePage />} />
+          <Route path="contact" element={<HomePage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -3,13 +3,11 @@ import "./landing-contact.css";
 
 const LandingContact = () => {
   return (
-    <div className="landing-contact" data-aos="fade-down">
+    <div className="landing-contact main-gap " data-aos="fade-down">
       <Container>
         <div className="content">
           <h1 data-aos="flip-right" data-aos-delay="100">
-            interested
-            <br /> working <br />
-            with me?
+            interested working with me?
           </h1>
           <div className="contact-btns">
             <button

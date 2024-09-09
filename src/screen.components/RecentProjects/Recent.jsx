@@ -1,12 +1,12 @@
 import "./recent.css";
 import Container from "../../layouts/Container";
-import img from "../../assets/project.png";
-import img2 from "../../assets/project2.webp";
-import Project from "../ProjectTemp";
+import img from "../../assets/projects/project2.png";
+import img2 from "../../assets/projects/project2.webp";
+import Project from "../../components/Project";
 
 export const Recent = () => {
   return (
-    <div className="recent-projects">
+    <div className="recent-projects main-gap">
       <Container>
         <div className="heading" data-aos="fade-down">
           <h1>Recent Projects</h1>

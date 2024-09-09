@@ -5,12 +5,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url(/src/assets/dddepth-348.jpg);
+  background-image: url(/src/assets/backgrounds/dddepth-348.jpg);
   background-size: cover;
 }
 .landing-contact .content h1 {
   color: #111111;
   text-align: left;
+  width: 160px;
   font-weight: 500;
 }
 .contact-btns {
@@ -29,4 +30,14 @@
   color: #fff;
   background: transparent;
   border: 2px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .landing-contact .content h1 {
+    text-align: center;
+    width: auto;
+  }
 }
