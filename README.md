@@ -10,4 +10,6 @@ Home > About<br/>
 Home > Projects > Project/id<br/>
 Home > Contact<br/>
 
+- React-router
+- AOS
 <b><a target="_blank" href="https://designer-port.netlify.app/">Live Preview</a></b>
