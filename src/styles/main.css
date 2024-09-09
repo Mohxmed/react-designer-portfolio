@@ -12,6 +12,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 div#root {
   display: flex;

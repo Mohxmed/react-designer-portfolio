@@ -8,12 +8,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 .card {
   width: 240px;
-  flex-grow: 1;
 }
 .card p {
   color: #828282;
