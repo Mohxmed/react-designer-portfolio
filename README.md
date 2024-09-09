@@ -9,3 +9,5 @@ v@1.0.0
 Home > About<br/>
 Home > Projects > Project/id<br/>
 Home > Contact<br/>
+
+<b><a target="_blank" href="https://designer-port.netlify.app/">Live Preview</a></b>
