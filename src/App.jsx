@@ -9,9 +9,8 @@ export default function App() {
   // AOS
   useEffect(() => {
     Aos.init({
-      offset: 50,
       duration: 1000,
-      once: true,
+      once: false,
     });
   }, []);
 

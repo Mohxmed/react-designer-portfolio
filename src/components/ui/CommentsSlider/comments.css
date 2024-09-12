@@ -1,0 +1,114 @@
+.comments .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.comments {
+  background: #6fc2c5;
+  padding-block: 2rem;
+}
+.comments h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  width: 420px;
+  margin: auto;
+}
+.comment-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.comment-card {
+  background: #fff;
+  height: 200px;
+  border-radius: 25px;
+  padding: 40px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.comment-card p {
+  font-size: 20px;
+  padding: 0;
+  width: 360px;
+}
+.user-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.user img {
+  width: 40px;
+}
+.rating {
+  display: flex;
+  gap: 10px;
+}
+.user-name {
+  font-weight: 500;
+}
+.job-title {
+  color: #888888;
+}
+span.active {
+  width: 20px;
+  background: #404040;
+  transition: all 0.3s;
+}
+.circular-taps span {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.circular-taps span:hover {
+  opacity: 1;
+}
+.circular-taps span:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  padding: 15px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.circular-taps {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 936px) {
+  .comment-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .comment-card p {
+    width: auto;
+  }
+  .comment-card {
+    width: 75%;
+  }
+  .comment-card p::after,
+  .comment-card p::before {
+    content: '"';
+  }
+}

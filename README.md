@@ -5,6 +5,7 @@ In this project i used <b>Vite</b>/<b>React</b>/<b>React-Router</b> to create a 
 v@1.0.0
 
 # Pages
+
 - Home
 - About
 - Projects
@@ -12,7 +13,12 @@ v@1.0.0
 - Contact
 
 # Used Technologies & Packages
-- React-router
+
 - AOS
+- React-router
+- React-icons
+- React-youtube
+- Normalize.css
+
 <br/>
 <b><a target="_blank" href="https://designer-port.netlify.app/">Live Preview</a></b>

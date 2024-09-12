@@ -1,13 +1,15 @@
-import { AboutArticle } from "../components.screen/About/AboutArticle";
-import AboutSection from "../components.screen/About/AboutSection";
-import Team from "../components.screen/About/Team";
+import Article from "../components/ui/About/Article";
+import AboutSection from "../components/ui/About/AboutSection";
+import Team from "../components/ui/About/Team";
+import Contact from "../components/ui/Contact/Contact";
 
 const About = () => {
   return (
     <>
       <AboutSection />
-      <AboutArticle />
+      <Article />
       <Team />
+      <Contact />
     </>
   );
 };
