@@ -1,8 +1,8 @@
 import "./recent.css";
 import Container from "../../../layouts/Container";
-import img from "../../../assets/projects/project2.png";
-import img2 from "../../../assets/projects/project2.webp";
+import projectImg from "../../../assets/projects/project.jpeg";
 import Project from "../../../components/Project";
+import animateProject from "../../../assets/projects/animate-project.gif";
 
 export const Recent = () => {
   return (
@@ -15,8 +15,12 @@ export const Recent = () => {
           </button>
         </div>
         <div className="projects-wrapper">
-          <Project delay={0} img={img} title={"Gaming Website"} />
-          <Project delay={200} img={img2} title={"NFTs Store"} />
+          <Project
+            delay={0}
+            img={animateProject}
+            title={"Social Media Mobile App"}
+          />
+          <Project delay={200} img={projectImg} title={"ERP System"} />
         </div>
       </Container>
     </div>

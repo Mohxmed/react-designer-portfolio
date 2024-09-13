@@ -1,44 +1,58 @@
 import { BsStarFill } from "react-icons/bs";
 import Container from "../../../layouts/Container";
 import "./comments.css";
-import user from "../../../assets/users/Picture.png";
 import comments from "../../../data/comments/comments";
 import { useState } from "react";
-
 const Comment = () => {
   const [showedComments, setShowedComments] = useState(0);
+  const numberOfPages = Math.ceil(comments.length / 2);
+  const firstCommentIndex = showedComments * 2;
+  const secondCommentIndex = firstCommentIndex + 1;
 
   return (
-    <div className="comments main-gap ">
+    <div className="comments main-gap">
       <Container>
         <h1 data-aos="fade-down">
           We Are Loved By Users And Clients Worldwide
         </h1>
         <div className="comment-wrapper">
-          {comments && (
+          {comments[firstCommentIndex] && (
             <CommentCard
-              aos={"zoom-out"}
-              userImg={comments[showedComments].img}
-              key={comments[showedComments].id}
-              name={comments[showedComments].name}
-              title={comments[showedComments].title}
-              rating={comments[showedComments].rating}
+              aos={"fade-in"}
+              userImg={comments[firstCommentIndex].img}
+              key={comments[firstCommentIndex].id}
+              name={comments[firstCommentIndex].name}
+              title={comments[firstCommentIndex].title}
+              rating={comments[firstCommentIndex].rating}
             >
-              {comments[showedComments].message}
+              {comments[firstCommentIndex].message}
+            </CommentCard>
+          )}
+
+          {comments[secondCommentIndex] && (
+            <CommentCard
+              aos={"fade-in"}
+              userImg={comments[secondCommentIndex].img}
+              key={comments[secondCommentIndex].id}
+              name={comments[secondCommentIndex].name}
+              title={comments[secondCommentIndex].title}
+              rating={comments[secondCommentIndex].rating}
+            >
+              {comments[secondCommentIndex].message}
             </CommentCard>
           )}
         </div>
 
         <div className="circular-taps">
-          {comments.map((comment) => {
-            return (
+          {Array(numberOfPages)
+            .fill("")
+            .map((_, index) => (
               <span
-                onClick={() => {
-                  setShowedComments(comment.id);
-                }}
+                key={index}
+                className={`tap${index === showedComments ? " active" : ""}`}
+                onClick={() => setShowedComments(index)}
               ></span>
-            );
-          })}
+            ))}
         </div>
       </Container>
     </div>
@@ -47,7 +61,7 @@ const Comment = () => {
 
 const CommentCard = ({ name, title, rating, userImg, aos, children }) => {
   return (
-    <div className="comment-card" data-aos-duration="200" data-aos={`${aos}`}>
+    <div className="comment-card" data-aos-duration="1000" data-aos={`${aos}`}>
       <div className="message">
         <p>{children}</p>
       </div>

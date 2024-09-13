@@ -1,39 +1,59 @@
-import img from "../../assets/users/Picture.png";
-import img2 from "../../assets/users/Picture Profile.png";
-
 export default [
   {
-    id: 0,
-    message:
-      "One of the best additions to our feedback loop has been the company-wide adoption of Fellow.",
-    name: "Ronald Richards",
-    title: "UI/UX Designer",
-    rating: "4.5",
-    img: img,
-  },
-  {
     id: 1,
-    message: "Great Work! I loved the way she designing.",
-    name: "Marry Gaine",
-    title: "Front End Developer",
-    rating: "5.0",
-    img: img2,
+    message: "Fantastic user experience, the design flows perfectly.",
+    name: "Alice Johnson",
+    title: "Graphic Designer",
+    rating: "4.9",
+    img: "https://randomuser.me/api/portraits/women/1.jpg",
   },
   {
     id: 2,
-    message:
-      "One of the best additions to our feedback loop has been the company-wide adoption of Fellow.",
-    name: "Ronald Richards",
-    title: "UI/UX Designer",
-    rating: "4.5",
-    img: img,
+    message: "I love the attention to detail and the responsiveness!",
+    name: "Mark Roberts",
+    title: "Web Developer",
+    rating: "4.8",
+    img: "https://randomuser.me/api/portraits/men/2.jpg",
   },
   {
     id: 3,
-    message: "Great Work! I loved the way she designing.",
-    name: "Marry Gaine",
+    message: "The performance is impressive, the site loads really fast.",
+    name: "Emily Clark",
+    title: "Software Engineer",
+    rating: "5.0",
+    img: "https://randomuser.me/api/portraits/women/3.jpg",
+  },
+  {
+    id: 4,
+    message:
+      "Very intuitive design, it's easy to navigate and find everything.",
+    name: "David Martin",
+    title: "Product Manager",
+    rating: "4.7",
+    img: "https://randomuser.me/api/portraits/men/4.jpg",
+  },
+  {
+    id: 5,
+    message: "Everything is smooth and works flawlessly, well done!",
+    name: "Chris Paul",
+    title: "Backend Developer",
+    rating: "4.7",
+    img: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    id: 6,
+    message: "Amazing work! The animations and transitions are seamless.",
+    name: "Sophia Williams",
+    title: "UI/UX Designer",
+    rating: "4.9",
+    img: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+  {
+    id: 7,
+    message: "The interface is sleek and modern, really impressive.",
+    name: "James Lee",
     title: "Front End Developer",
     rating: "5.0",
-    img: img2,
+    img: "https://randomuser.me/api/portraits/men/7.jpg",
   },
 ];

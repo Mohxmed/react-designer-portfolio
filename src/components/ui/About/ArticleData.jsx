@@ -39,7 +39,8 @@ const ArticleData = () => {
             height: "600px",
             width: "100%",
             playerVars: {
-              autoplay: 1,
+              autoplay: 0,
+              origin: "http://localhost:5173",
             },
           }}
         />
