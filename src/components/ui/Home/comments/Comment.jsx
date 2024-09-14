@@ -1,8 +1,12 @@
-import { BsStarFill } from "react-icons/bs";
-import Container from "../../../layouts/Container";
-import "./comments.css";
-import comments from "../../../data/comments/comments";
 import { useState } from "react";
+
+import Container from "@layouts/Container";
+import comments from "@data/comments/comments";
+
+import "./comments.css";
+import { BsStarFill } from "react-icons/bs";
+
+//
 const Comment = () => {
   const [showedComments, setShowedComments] = useState(0);
   const numberOfPages = Math.ceil(comments.length / 2);

@@ -1,5 +1,5 @@
-import Container from "../../../layouts/Container";
-import adminData from "../../../data/admin/adminData";
+import Container from "@layouts/Container";
+import adminData from "@data/admin/adminData";
 import ProsCard from "./ProsCard";
 import "./why-me.css";
 

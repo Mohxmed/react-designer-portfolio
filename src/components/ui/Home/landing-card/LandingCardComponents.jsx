@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import adminData from "../../../data/admin/adminData";
+import adminData from "@data/admin/adminData";
 
 // Images
-import Image from "../../../assets/landing-card/card-image.png";
+import Image from "@assets/landing-card/card-image.png";
 
 // Icons
 import { GoStarFill } from "react-icons/go";

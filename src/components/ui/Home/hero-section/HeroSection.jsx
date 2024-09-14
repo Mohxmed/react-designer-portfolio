@@ -1,5 +1,5 @@
 import "./hero-section.css";
-import Container from "../../../layouts/Container";
+import Container from "@layouts/Container";
 import { HeroInfo } from "./HeroSectionComponent";
 import HeroImg from "./HeroImg";
 

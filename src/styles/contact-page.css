@@ -1,0 +1,11 @@
+.contact-page .contact-form {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  height: calc(100vh - 200px - 4rem);
+}
+.contact-page form {
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+}

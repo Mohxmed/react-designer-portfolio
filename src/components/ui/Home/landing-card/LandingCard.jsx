@@ -1,5 +1,5 @@
 // Components
-import Container from "../../../layouts/Container";
+import Container from "@layouts/Container";
 import { CardContent } from "./LandingCardComponents";
 
 // Styles

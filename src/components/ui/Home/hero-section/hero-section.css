@@ -55,48 +55,6 @@
   display: flex;
   gap: 1rem;
 }
-/* Email Me Overlay */
-.overlay-content form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 75%;
-}
-.overlay-content input,
-.overlay-content textarea {
-  border: 1px solid #dfdfdf;
-  font-size: 1rem;
-  padding: 10px;
-  border-radius: 5px;
-}
-.overlay-content #message {
-  height: 150px;
-  resize: none;
-}
-.overlay-content button {
-  border: none;
-  background: var(--primary-color);
-  padding: 10px;
-  border-radius: 4px;
-  height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.form-buttons {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-}
-.form-buttons .reset {
-  background: #e7e7e7;
-  color: #272727;
-}
-.form-buttons .send {
-  flex-grow: 1;
-}
 
 /* Checkpoints */
 @media (max-width: 768px) {

@@ -8,6 +8,7 @@ const CustomLink = ({ to, NavTarget, onClick, children, setNavLine }) => {
 
   return (
     <NavLink
+      replace
       onClick={() => {
         onClick(NavTarget);
       }}

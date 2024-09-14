@@ -1,10 +1,10 @@
-import Container from "../../../layouts/Container";
+import Container from "@layouts/Container";
 import "./partner.css";
 
 // images
-import Logos from "../../../assets/logos/Logos.png";
+import Logos from "@assets/logos/Logos.png";
 
-export const Partner = () => {
+const Partner = () => {
   return (
     <div className="partners main-gap" data-aos="fade-down">
       <Container>
@@ -13,3 +13,4 @@ export const Partner = () => {
     </div>
   );
 };
+export default Partner;

@@ -1,4 +1,4 @@
-import Container from "../../../layouts/Container";
+import Container from "@layouts/Container";
 import "./landing-contact.css";
 
 const LandingContact = () => {

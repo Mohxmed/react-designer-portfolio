@@ -33,7 +33,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" data-aos="fade-left">
       <h3>We’d Love To Hear From You</h3>
       <div className="form-wrapper" style={{ position: "relative" }}>
         <form
@@ -67,17 +67,7 @@ export default function ContactForm() {
             name="message"
             placeholder="Enter your message"
           ></textarea>
-          {error && (
-            <p
-              style={{
-                color: "#cd0000",
-                position: "absolute",
-                bottom: "-10px",
-              }}
-            >
-              Please fill all the information fields
-            </p>
-          )}
+          {error && <p>Please fill all the information fields</p>}
           <button onClick={handleSubmit} className="btn">
             Email me
           </button>
