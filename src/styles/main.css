@@ -40,6 +40,7 @@ a:active {
 * {
   outline-color: #6fc2c5;
   transition: all 0.3;
+  box-sizing: border-box;
 }
 label {
   color: #666666;
@@ -54,4 +55,34 @@ label {
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
   border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+  .projects-wrapper {
+    justify-content: center;
+  }
+  .project-info a {
+    font-size: 14px;
+  }
+  .contact-btns {
+    gap: 10px;
+    padding: 0 20px;
+  }
+  .comments h1 {
+    font-size: 30px;
+    width: 80%;
+  }
+  .comment-card {
+    width: 100%;
+    height: max-content;
+    padding: 15px 25px;
+  }
+  .user-data {
+    flex-direction: column;
+    gap: 13px;
+    align-items: flex-start;
+  }
+  .project-wrapper .container {
+    justify-content: center;
+  }
 }
