@@ -6,10 +6,10 @@ const Socials = () => {
     <div className="follow">
       <span className="gray">Follow Me</span>
       <SocialIcons
-        linkedInLink={"#"}
-        instagramLink={"#"}
-        dribbleLink={"#"}
-        youtubeLink={"#"}
+        linkedInLink={"https://linkedin.com"}
+        instagramLink={"https://instagram.com"}
+        dribbleLink={"https://dribble.com"}
+        youtubeLink={"https://youtube.com"}
       />
     </div>
   );
@@ -23,16 +23,16 @@ const SocialIcons = ({
 }) => {
   return (
     <div className="icons ">
-      <a href={linkedInLink}>
+      <a target="_blank" href={linkedInLink}>
         <BsLinkedin size={25} />
       </a>
-      <a href={dribbleLink}>
+      <a target="_blank" href={dribbleLink}>
         <BsDribbble size={25} />
       </a>
-      <a href={instagramLink}>
+      <a target="_blank" href={instagramLink}>
         <BsInstagram size={25} />
       </a>
-      <a href={youtubeLink}>
+      <a target="_blank" href={youtubeLink}>
         <BsYoutube size={25} />
       </a>
     </div>

@@ -27,8 +27,8 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="projects/:id" element={<ProjectView />} />
-          <Route path="contact" element={<Contact />} />
         </Route>
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

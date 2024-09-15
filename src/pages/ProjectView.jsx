@@ -11,7 +11,7 @@ export default function ProjectView() {
   });
   console.log(selected);
   return (
-    <div className="view-project" data-aos="fade-left">
+    <div className="view-project" data-aos="fade-right">
       <Container>
         <div className="back">
           <Link to=".." relative="path">

@@ -30,21 +30,21 @@ export default {
     },
     {
       id: 2,
-      reason: "Communicative",
+      reason: "Professional",
       description:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
       image: Pros1,
     },
     {
       id: 3,
-      reason: "Communicative",
+      reason: "Collaborative​",
       description:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
       image: Pros2,
     },
     {
       id: 4,
-      reason: "Communicative",
+      reason: "Client’s Favourite",
       description:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
       image: Pros3,

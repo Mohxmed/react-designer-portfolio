@@ -1,5 +1,6 @@
 import Container from "@layouts/Container";
 import "./landing-contact.css";
+import { Link } from "react-router-dom";
 
 const LandingContact = () => {
   return (
@@ -10,20 +11,24 @@ const LandingContact = () => {
             interested working with me?
           </h1>
           <div className="contact-btns">
-            <button
-              data-aos="flip-left"
-              data-aos-delay="200"
-              className="btn mail-btn"
-            >
-              Contact Me
-            </button>
-            <button
-              data-aos="flip-left"
-              data-aos-delay="300"
-              className="btn seemore-btn"
-            >
-              See More Projects
-            </button>
+            <Link to={"/contact"}>
+              <button
+                data-aos="flip-left"
+                data-aos-delay="200"
+                className="btn mail-btn"
+              >
+                Contact Me
+              </button>
+            </Link>
+            <Link to={"/projects"}>
+              <button
+                data-aos="flip-left"
+                data-aos-delay="300"
+                className="btn seemore-btn"
+              >
+                See More Projects
+              </button>
+            </Link>
           </div>
         </div>
       </Container>

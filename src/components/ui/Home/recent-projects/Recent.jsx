@@ -4,6 +4,7 @@ import projectImg from "@assets/projects/project.jpeg";
 import Project from "@components/Project";
 import animateProject from "@assets/projects/animate-project.gif";
 import projects from "@data/projects/projects";
+import { Link } from "react-router-dom";
 
 const Recent = () => {
   return (
@@ -12,7 +13,9 @@ const Recent = () => {
         <div className="heading" data-aos="fade-down">
           <h1>Recent Projects</h1>
           <button className="btn outline-btn">
-            <span>View More</span>
+            <Link to={"/projects"}>
+              <span>View More</span>
+            </Link>
           </button>
         </div>
         <div className="projects-wrapper">

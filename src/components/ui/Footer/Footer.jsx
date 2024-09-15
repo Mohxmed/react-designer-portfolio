@@ -7,7 +7,12 @@ const Footer = () => {
     <div className="footer">
       <Container>
         <h1>Let's Connect!</h1>
-        <SocialIcons />
+        <SocialIcons
+          linkedInLink={"https://linkedin.com"}
+          instagramLink={"https://instagram.com"}
+          dribbleLink={"https://dribble.com"}
+          youtubeLink={"https://youtube.com"}
+        />
       </Container>
     </div>
   );

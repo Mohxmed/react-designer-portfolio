@@ -8,6 +8,7 @@ import LineImage from "@assets/hero-section/Line.png";
 // icons
 import { MdMailOutline } from "react-icons/md";
 import { GoDownload } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 // Info Component
 const HeroInfo = () => {
@@ -16,7 +17,9 @@ const HeroInfo = () => {
       <HeroInfoText />
       <Socials />
       <div className="hero-btns">
-        <MainButton text={"Mail Me"} icon={<MdMailOutline size={25} />} />
+        <Link to={"/contact"}>
+          <MainButton text={"Mail Me"} icon={<MdMailOutline size={25} />} />
+        </Link>
         <a href={adminData.cv} download>
           <OutlineButton text={"Download CV"} icon={<GoDownload size={25} />} />
         </a>

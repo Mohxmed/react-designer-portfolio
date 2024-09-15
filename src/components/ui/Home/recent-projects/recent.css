@@ -63,7 +63,10 @@
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
-
+.btn a {
+  text-decoration: none;
+  color: #000;
+}
 @media (max-width: 768px) {
   .recent-projects h1 {
     font-size: 20px;

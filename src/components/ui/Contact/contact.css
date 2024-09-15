@@ -59,6 +59,7 @@ textarea {
   width: 150px;
   height: 40px;
   font-size: 14px;
+  box-shadow: 1px 1px 4px #00000036;
 }
 .contact-form.sent {
   text-align: center;
@@ -97,7 +98,9 @@ textarea {
     bottom: -45px;
   }
 }
-.contact-page {
-  background: #6fc2c5;
-  padding-block: 2rem;
+.contact {
+  padding-block: 3rem;
+  margin-top: 5rem;
+  background: url(/src/assets/backgrounds/dddepth-348.jpg);
+  background-size: cover;
 }
